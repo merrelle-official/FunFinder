@@ -1,0 +1,21 @@
+$main-color: #B4D7D9;
+$second-color: #4D5C63;
+$main-text-color: #3C3C3C;
+$second-text-color: white;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $main-text-color;
+    font-family: 'Jura';
+    list-style: none;
+}
+
+.header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+}

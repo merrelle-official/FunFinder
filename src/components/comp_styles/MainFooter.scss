@@ -1,0 +1,36 @@
+$fontweight: 20px;
+
+a{
+    text-decoration: none;
+}
+
+.all__footer{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $fontweight;
+    font-weight: bold;
+}
+
+.footer__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.8rem 0;
+    align-items: center;
+}
+
+.footer__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li:not(:last-child){
+    margin-bottom: 0.8rem;
+}
+
+.footer__mark{
+    margin: 10px 0;
+}

@@ -1,0 +1,116 @@
+$main-color: #B4D7D9;
+$second-color: #4D5C63;
+$main-text-color: #3C3C3C;
+$second-text-color: white;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $main-text-color;
+    font-family: 'Jura';
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__content{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__slider{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prev__card, .next__card{
+    min-width: 70px;
+    min-height: 70px;
+    background-color: $second-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next__card>img{
+    transform: rotate(180deg) translateX(-3px);
+}
+
+.prev__card>img{
+    transform: translateX(-3px);
+}
+
+.current__card{
+    margin: 0 1.5rem;
+    background-image: url("../assets/Slider1.png");
+    border-radius: 30px;
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 6rem;
+    background-size: cover;
+}
+
+.card__title{
+    
+    font-size: 40px;
+    font-weight: 400;
+    span{
+        font-weight: bold;
+    }
+}
+
+.card__text{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+        width: 65%;
+        
+    }
+    button{
+        align-self: flex-end;
+        width: 16rem;
+        height: 3.5rem;
+        border-radius: 30px;
+        background-color: $second-color;
+        font-size: 30px;
+        text-align: center;
+        a{
+            color: $second-text-color;
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+}
+
