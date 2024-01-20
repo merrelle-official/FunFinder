@@ -21,5 +21,24 @@
 </script>
 
 <style lang="scss" scoped>
-@import "./comp_styles/MainHeader.scss";
+.header__wrapper{
+    width: 65%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+li{
+    display: inline-block;
+    &:not(:last-child){
+        margin-right: 7rem;
+    }
+}
 </style>
