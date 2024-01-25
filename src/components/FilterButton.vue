@@ -1,5 +1,5 @@
 <template>
-    <button class="body">
+    <button class="button__body">
         <p class="button__text">{{ buttonText }}</p>
     </button>
 </template>
@@ -8,18 +8,21 @@
 export default{
     name: 'FilterButton',
     props: {
-        buttonText: String
+        buttonText: String,
+        id: Number,
     }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../Structures.scss";
-.body{
+.button__body{
     background-color: $secondColor;
     font-weight: bold;
-    padding: 1rem 2rem;
+    padding: 0.6rem 1.3rem;
     border-radius: 30px;
+    margin: 0 1rem;
+    white-space: nowrap;
     .button__text{
         color: $secondTextColor;
     }
